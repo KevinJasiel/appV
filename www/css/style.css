@@ -426,3 +426,24 @@
   }
 }
 
+.posser{
+  background: url(https://image.freepik.com/foto-gratis/borrosa-cielo-azul-uso-mar-asi-como-blur-telon-fondo-oceano-concept-blurry-pastel-colores-sol_1258-239.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prueb2{
+  height: 750px;
+  height: 250px;
+}
+
+.parrafo2{
+  font-size: 17px;
+  color: black;
+  font-family: Arial;
+  text-align: left;
+}
+.title1{
+  font-size: 25px;
+  text-align: center;
+}
