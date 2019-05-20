@@ -1,9 +1,36 @@
-<ion-view view-title="configuration">
+<ion-view view-title="Memory Game">
   <ion-content>
     <ion-list>
     <ion-toggle  ng-model="settings.enableFriends">
        Disconnected mode
     </ion-toggle>
     </ion-list>
+
+    <main class="app" ng-app="app" ng-controller="AppController" ng-class="{'app-ready': appReady}">
+
+  <div class="app__hud">
+
+    <div class="app__hud__game-info" ng-hide="gameCompleted" ng-click="titleAction()" ng-swipe-left="changeIcons()" ng-swipe-right="changeIcons()">Encuentra las coincidencias</div>
+    <div class="app__hud__game-completed" ng-show="gameCompleted">
+      Felicidades!
+    </div>
+    <div class="app__hud__game-status">Clicks: {{clickCount}}, Cartas: {{cardsLeft}}</div>
+    <button ng-click="restart()" class="app__hud__btn-restart">Restaurar</button>
+  </div>
+
+  <div class="app__cards-container">
+
+    <div class="app__cards-container__card" role="button" ng-repeat="card in list" id="{{ 'card-' + card.id }}">
+
+      <div class="front app__cards-container__card__front" ng-click="click(card, $index)" ng-swipe-right="click(card, $index)" ng-swipe-left="click(card, $index)"> {{card.isKnown ? "" : "?"}}</div>
+      <div class="back app__cards-container__card__back">
+        <span ng-class="card.theme">{{card.icon}}</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
   </ion-content>
 </ion-view>

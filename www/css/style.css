@@ -1,86 +1,5 @@
-/* Empty. Add your own CSS if you like */
-@rotate-time: 4s;
-@rotate-delay: 0.15;
-@lines-color: rgba(0,0,0,0.1);
-@dots-color: black;
-
-#dna {
-  position: absolute;
-  top: 50%;
-  height: 240px;
-  left: 50%;
-  width: 800px;
-  margin-top: -120px;
-  margin-left: -400px;
-  perspective: 1000px;
-}
-
-#dna div{
-  position: relative;
-  top: 50%;
-  left: 60px;
-  width: 2px;
-  height: 160px;
-  margin-top: -80px;
-  background-color: @lines-color;
-  float: left;
-  transform-style: preserve-3d;
-  margin-left: 20px;
-  animation: rotation @rotate-time linear infinite;
-}
-
-#dna div::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: @dots-color;
-  border-radius: 5px;
-  animation: rotation @rotate-time linear infinite reverse;
-  z-index: 1;
-}
-
-#dna div::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: @dots-color;
-  border-radius: 5px;
-  animation: rotation @rotate-time linear infinite reverse;
-  z-index: 1;
-}
-
-@iterations: 30;
-.loop (@i) when (@i > 0) {
-  @delay: (@i * @rotate-delay - 60);
-  #dna div:nth-child(@{i}){
-    animation-delay: ~"@{delay}s";
-  }
-  #dna div:nth-child(@{i})::before{
-    animation-delay: ~"@{delay}s";
-  }
-  #dna div:nth-child(@{i})::after{
-    animation-delay: ~"@{delay}s";
-  }
-  .loop(@i - 1);
-}
-.loop(@iterations);
-
-@-webkit-keyframes rotation {
-		from {
-				transform: rotateX(0deg);
-		}
-		to {
-				transform: rotateX(359deg);
-		}
-}
 .padding{
-  background-image: url(https://image.freepik.com/foto-gratis/borrosa-cielo-azul-uso-mar-asi-como-blur-telon-fondo-oceano-concept-blurry-pastel-colores-sol_1258-239.jpg);
+  background-image: url(https://preview.ibb.co/bs5qFQ/papers_co_sl09_soft_blue_green_wood_blur_gradation_iphone_6_plus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,334 +15,6 @@
   text-align: center;
   color: black;
   font-family: arial;
-}
-
-
-#dna {
-  position: absolute;
-  top: 50%;
-  height: 240px;
-  left: 50%;
-  width: 800px;
-  margin-top: -120px;
-  margin-left: -400px;
-  perspective: 1000px;
-  margin-top: 150px;
-}
-#dna div {
-  position: relative;
-  top: 50%;
-  left: 60px;
-  width: 2px;
-  height: 160px;
-  margin-top: -80px;
-  background-color: skyblue;
-  float: left;
-  transform-style: preserve-3d;
-  margin-left: 20px;
-  animation: rotation 4s linear infinite;
-}
-#dna div::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: black;
-  border-radius: 5px;
-  animation: rotation 4s linear infinite reverse;
-  z-index: 1;
-}
-#dna div::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: black;
-  border-radius: 5px;
-  animation: rotation 4s linear infinite reverse;
-  z-index: 1;
-}
-#dna div:nth-child(30) {
-  animation-delay: -55.5s;
-}
-#dna div:nth-child(30)::before {
-  animation-delay: -55.5s;
-}
-#dna div:nth-child(30)::after {
-  animation-delay: -55.5s;
-}
-#dna div:nth-child(29) {
-  animation-delay: -55.65s;
-}
-#dna div:nth-child(29)::before {
-  animation-delay: -55.65s;
-}
-#dna div:nth-child(29)::after {
-  animation-delay: -55.65s;
-}
-#dna div:nth-child(28) {
-  animation-delay: -55.8s;
-}
-#dna div:nth-child(28)::before {
-  animation-delay: -55.8s;
-}
-#dna div:nth-child(28)::after {
-  animation-delay: -55.8s;
-}
-#dna div:nth-child(27) {
-  animation-delay: -55.95s;
-}
-#dna div:nth-child(27)::before {
-  animation-delay: -55.95s;
-}
-#dna div:nth-child(27)::after {
-  animation-delay: -55.95s;
-}
-#dna div:nth-child(26) {
-  animation-delay: -56.1s;
-}
-#dna div:nth-child(26)::before {
-  animation-delay: -56.1s;
-}
-#dna div:nth-child(26)::after {
-  animation-delay: -56.1s;
-}
-#dna div:nth-child(25) {
-  animation-delay: -56.25s;
-}
-#dna div:nth-child(25)::before {
-  animation-delay: -56.25s;
-}
-#dna div:nth-child(25)::after {
-  animation-delay: -56.25s;
-}
-#dna div:nth-child(24) {
-  animation-delay: -56.4s;
-}
-#dna div:nth-child(24)::before {
-  animation-delay: -56.4s;
-}
-#dna div:nth-child(24)::after {
-  animation-delay: -56.4s;
-}
-#dna div:nth-child(23) {
-  animation-delay: -56.55s;
-}
-#dna div:nth-child(23)::before {
-  animation-delay: -56.55s;
-}
-#dna div:nth-child(23)::after {
-  animation-delay: -56.55s;
-}
-#dna div:nth-child(22) {
-  animation-delay: -56.7s;
-}
-#dna div:nth-child(22)::before {
-  animation-delay: -56.7s;
-}
-#dna div:nth-child(22)::after {
-  animation-delay: -56.7s;
-}
-#dna div:nth-child(21) {
-  animation-delay: -56.85s;
-}
-#dna div:nth-child(21)::before {
-  animation-delay: -56.85s;
-}
-#dna div:nth-child(21)::after {
-  animation-delay: -56.85s;
-}
-#dna div:nth-child(20) {
-  animation-delay: -57s;
-}
-#dna div:nth-child(20)::before {
-  animation-delay: -57s;
-}
-#dna div:nth-child(20)::after {
-  animation-delay: -57s;
-}
-#dna div:nth-child(19) {
-  animation-delay: -57.15s;
-}
-#dna div:nth-child(19)::before {
-  animation-delay: -57.15s;
-}
-#dna div:nth-child(19)::after {
-  animation-delay: -57.15s;
-}
-#dna div:nth-child(18) {
-  animation-delay: -57.3s;
-}
-#dna div:nth-child(18)::before {
-  animation-delay: -57.3s;
-}
-#dna div:nth-child(18)::after {
-  animation-delay: -57.3s;
-}
-#dna div:nth-child(17) {
-  animation-delay: -57.45s;
-}
-#dna div:nth-child(17)::before {
-  animation-delay: -57.45s;
-}
-#dna div:nth-child(17)::after {
-  animation-delay: -57.45s;
-}
-#dna div:nth-child(16) {
-  animation-delay: -57.6s;
-}
-#dna div:nth-child(16)::before {
-  animation-delay: -57.6s;
-}
-#dna div:nth-child(16)::after {
-  animation-delay: -57.6s;
-}
-#dna div:nth-child(15) {
-  animation-delay: -57.75s;
-}
-#dna div:nth-child(15)::before {
-  animation-delay: -57.75s;
-}
-#dna div:nth-child(15)::after {
-  animation-delay: -57.75s;
-}
-#dna div:nth-child(14) {
-  animation-delay: -57.9s;
-}
-#dna div:nth-child(14)::before {
-  animation-delay: -57.9s;
-}
-#dna div:nth-child(14)::after {
-  animation-delay: -57.9s;
-}
-#dna div:nth-child(13) {
-  animation-delay: -58.05s;
-}
-#dna div:nth-child(13)::before {
-  animation-delay: -58.05s;
-}
-#dna div:nth-child(13)::after {
-  animation-delay: -58.05s;
-}
-#dna div:nth-child(12) {
-  animation-delay: -58.2s;
-}
-#dna div:nth-child(12)::before {
-  animation-delay: -58.2s;
-}
-#dna div:nth-child(12)::after {
-  animation-delay: -58.2s;
-}
-#dna div:nth-child(11) {
-  animation-delay: -58.35s;
-}
-#dna div:nth-child(11)::before {
-  animation-delay: -58.35s;
-}
-#dna div:nth-child(11)::after {
-  animation-delay: -58.35s;
-}
-#dna div:nth-child(10) {
-  animation-delay: -58.5s;
-}
-#dna div:nth-child(10)::before {
-  animation-delay: -58.5s;
-}
-#dna div:nth-child(10)::after {
-  animation-delay: -58.5s;
-}
-#dna div:nth-child(9) {
-  animation-delay: -58.65s;
-}
-#dna div:nth-child(9)::before {
-  animation-delay: -58.65s;
-}
-#dna div:nth-child(9)::after {
-  animation-delay: -58.65s;
-}
-#dna div:nth-child(8) {
-  animation-delay: -58.8s;
-}
-#dna div:nth-child(8)::before {
-  animation-delay: -58.8s;
-}
-#dna div:nth-child(8)::after {
-  animation-delay: -58.8s;
-}
-#dna div:nth-child(7) {
-  animation-delay: -58.95s;
-}
-#dna div:nth-child(7)::before {
-  animation-delay: -58.95s;
-}
-#dna div:nth-child(7)::after {
-  animation-delay: -58.95s;
-}
-#dna div:nth-child(6) {
-  animation-delay: -59.1s;
-}
-#dna div:nth-child(6)::before {
-  animation-delay: -59.1s;
-}
-#dna div:nth-child(6)::after {
-  animation-delay: -59.1s;
-}
-#dna div:nth-child(5) {
-  animation-delay: -59.25s;
-}
-#dna div:nth-child(5)::before {
-  animation-delay: -59.25s;
-}
-#dna div:nth-child(5)::after {
-  animation-delay: -59.25s;
-}
-#dna div:nth-child(4) {
-  animation-delay: -59.4s;
-}
-#dna div:nth-child(4)::before {
-  animation-delay: -59.4s;
-}
-#dna div:nth-child(4)::after {
-  animation-delay: -59.4s;
-}
-#dna div:nth-child(3) {
-  animation-delay: -59.55s;
-}
-#dna div:nth-child(3)::before {
-  animation-delay: -59.55s;
-}
-#dna div:nth-child(3)::after {
-  animation-delay: -59.55s;
-}
-#dna div:nth-child(2) {
-  animation-delay: -59.7s;
-}
-#dna div:nth-child(2)::before {
-  animation-delay: -59.7s;
-}
-#dna div:nth-child(2)::after {
-  animation-delay: -59.7s;
-}
-#dna div:nth-child(1) {
-  animation-delay: -59.85s;
-}
-#dna div:nth-child(1)::before {
-  animation-delay: -59.85s;
-}
-#dna div:nth-child(1)::after {
-  animation-delay: -59.85s;
-}
-@-webkit-keyframes rotation {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(359deg);
-  }
 }
 
 .posser{
@@ -446,4 +37,422 @@
 .title1{
   font-size: 25px;
   text-align: center;
+}
+
+img{ 
+  width: 100%;
+  height: 75%;
+  position: center;
+}
+
+/*dna*/
+
+:root {
+  --bg-color: radial-gradient(circle at center, #fff, #ccc);
+  --dot-color1:deepskyblue;
+  --dot-color2:#000;
+}
+
+body {
+  background: var(--bg-color);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dna {
+  width: 360px;
+  height: 70px;
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+
+.ele {
+  width: 2px;
+  height: 100px;
+  float: left;
+  margin: 0 8px;
+  border-left: 2px #B0B0B0 dashed;
+  position: relative;
+  transform: rotateX(-360deg);
+  animation: run 2s linear infinite;
+}
+.ele:before, .ele:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--dot-color1);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ele:before {
+  top: -2px;
+  background: var(--dot-color2);
+}
+.ele:after {
+  bottom: -2px;
+}
+.ele:nth-of-type(1) {
+  animation-delay: -0.15s;
+}
+.ele:nth-of-type(2) {
+  animation-delay: -0.3s;
+}
+.ele:nth-of-type(3) {
+  animation-delay: -0.45s;
+}
+.ele:nth-of-type(4) {
+  animation-delay: -0.6s;
+}
+.ele:nth-of-type(5) {
+  animation-delay: -0.75s;
+}
+.ele:nth-of-type(6) {
+  animation-delay: -0.9s;
+}
+.ele:nth-of-type(7) {
+  animation-delay: -1.05s;
+}
+.ele:nth-of-type(8) {
+  animation-delay: -1.2s;
+}
+.ele:nth-of-type(9) {
+  animation-delay: -1.35s;
+}
+.ele:nth-of-type(10) {
+  animation-delay: -1.5s;
+}
+.ele:nth-of-type(11) {
+  animation-delay: -1.65s;
+}
+.ele:nth-of-type(12) {
+  animation-delay: -1.8s;
+}
+.ele:nth-of-type(13) {
+  animation-delay: -1.95s;
+}
+.ele:nth-of-type(14) {
+  animation-delay: -2.1s;
+}
+.ele:nth-of-type(15) {
+  animation-delay: -2.25s;
+}
+.ele:nth-of-type(16) {
+  animation-delay: -2.4s;
+}
+.ele:nth-of-type(17) {
+  animation-delay: -2.55s;
+}
+.ele:nth-of-type(18) {
+  animation-delay: -2.7s;
+}
+.ele:nth-of-type(19) {
+  animation-delay: -2.85s;
+}
+.ele:nth-of-type(20) {
+  animation-delay: -3s;
+}
+
+@keyframes run {
+  to {
+    transform: none;
+  }
+}
+
+
+/* Compilacion de juego */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+[ng-cloak] {
+  opacity: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font: 20px sans-serif;
+  background: linear-gradient(to left, dodgerblue, #345);
+}
+
+.theme1 {
+  background: rgba(217, 38, 38, 0.7);
+}
+
+.theme2 {
+  background: rgba(217, 172, 38, 0.7);
+}
+
+.theme3 {
+  background: rgba(128, 217, 38, 0.7);
+}
+
+.theme4 {
+  background: rgba(38, 217, 83, 0.7);
+}
+
+.theme5 {
+  background: rgba(38, 217, 217, 0.7);
+}
+
+.theme6 {
+  background: rgba(38, 83, 217, 0.7);
+}
+
+.theme7 {
+  background: rgba(128, 38, 217, 0.7);
+}
+
+.theme8 {
+  background: rgba(217, 38, 172, 0.7);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.app {
+  display: block;
+  opacity: 0;
+  transition: opacity 2s;
+  color: white;
+}
+.app.app-ready {
+  opacity: 1;
+}
+.app__hud {
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1em;
+}
+.app__hud__game-info, .app__hud__game-completed {
+  display: inline-block;
+  margin-right: 1em;
+}
+.app__hud__game-status {
+  display: inline-block;
+  font-size: 70%;
+  margin-right: 1em;
+}
+.app__hud__btn-restart {
+  font-size: 70%;
+}
+.app__cards-container {
+  margin: 5px auto 0;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+@media (min-width: 600px) {
+  .app__cards-container {
+    max-width: 600px;
+  }
+}
+.app__cards-container__card {
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card {
+    width: 120px;
+    height: 120px;
+  }
+}
+.app__cards-container__card.ng-leave {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  transition: 2s ease-in-out;
+}
+.app__cards-container__card.ng-leave.ng-leave-active {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  -webkit-transform: scale3d(0, 0, 0);
+          transform: scale3d(0, 0, 0);
+}
+.app__cards-container__card.ng-enter {
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.app__cards-container__card.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.app__cards-container__card:nth-child(1) .front {
+  -webkit-animation-delay: 0.6666666667s;
+          animation-delay: 0.6666666667s;
+}
+.app__cards-container__card:nth-child(2) .front {
+  -webkit-animation-delay: 1.3333333333s;
+          animation-delay: 1.3333333333s;
+}
+.app__cards-container__card:nth-child(3) .front {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.app__cards-container__card:nth-child(4) .front {
+  -webkit-animation-delay: 2.6666666667s;
+          animation-delay: 2.6666666667s;
+}
+.app__cards-container__card:nth-child(5) .front {
+  -webkit-animation-delay: 3.3333333333s;
+          animation-delay: 3.3333333333s;
+}
+.app__cards-container__card:nth-child(6) .front {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.app__cards-container__card:nth-child(7) .front {
+  -webkit-animation-delay: 4.6666666667s;
+          animation-delay: 4.6666666667s;
+}
+.app__cards-container__card:nth-child(8) .front {
+  -webkit-animation-delay: 5.3333333333s;
+          animation-delay: 5.3333333333s;
+}
+.app__cards-container__card:nth-child(9) .front {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.app__cards-container__card:nth-child(10) .front {
+  -webkit-animation-delay: 6.6666666667s;
+          animation-delay: 6.6666666667s;
+}
+.app__cards-container__card:nth-child(11) .front {
+  -webkit-animation-delay: 7.3333333333s;
+          animation-delay: 7.3333333333s;
+}
+.app__cards-container__card:nth-child(12) .front {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.app__cards-container__card:nth-child(13) .front {
+  -webkit-animation-delay: 8.6666666667s;
+          animation-delay: 8.6666666667s;
+}
+.app__cards-container__card:nth-child(14) .front {
+  -webkit-animation-delay: 9.3333333333s;
+          animation-delay: 9.3333333333s;
+}
+.app__cards-container__card:nth-child(15) .front {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.app__cards-container__card:nth-child(16) .front {
+  -webkit-animation-delay: 10.6666666667s;
+          animation-delay: 10.6666666667s;
+}
+.app__cards-container__card__front {
+  text-align: center;
+  line-height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  -webkit-animation: front-cover 2s ease-in-out alternate infinite;
+          animation: front-cover 2s ease-in-out alternate infinite;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__front {
+    line-height: 120px;
+  }
+}
+.app__cards-container__card__front:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.app__cards-container__card__back {
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__back {
+    line-height: 120px;
+  }
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__back {
+    font-size: 60px;
+  }
+}
+.app__cards-container__card__back > span {
+  display: block;
+  -webkit-animation: back-cover 2s ease-in-out alternate infinite;
+          animation: back-cover 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes back-cover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes back-cover {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ng-enter-stagger {
+  transition-delay: 0.1s;
+  transition-duration: 0s;
+}
+
+.ng-leave-stagger {
+  transition-delay: 0.1s;
+  transition-duration: 0s;
 }
