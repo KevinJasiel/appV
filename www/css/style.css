@@ -166,293 +166,137 @@ body {
 
 /* Compilacion de juego */
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  outline: none;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-[ng-cloak] {
-  opacity: 0;
-}
-
-body {
-  min-height: 100%;
+* {
   margin: 0;
-  font: 20px sans-serif;
-  background: linear-gradient(to left, dodgerblue, #345);
-}
-
-.theme1 {
-  background: rgba(217, 38, 38, 0.7);
-}
-
-.theme2 {
-  background: rgba(217, 172, 38, 0.7);
-}
-
-.theme3 {
-  background: rgba(128, 217, 38, 0.7);
-}
-
-.theme4 {
-  background: rgba(38, 217, 83, 0.7);
-}
-
-.theme5 {
-  background: rgba(38, 217, 217, 0.7);
-}
-
-.theme6 {
-  background: rgba(38, 83, 217, 0.7);
-}
-
-.theme7 {
-  background: rgba(128, 38, 217, 0.7);
-}
-
-.theme8 {
-  background: rgba(217, 38, 172, 0.7);
-}
-
-button {
-  background: none;
-  border: none;
   padding: 0;
-  font: inherit;
-  color: inherit;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.app {
+body {
+  background: #FF9090;
+}
+
+.todo {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  position: relative;
+} 
+
+.titulo {
+   font-size: 25px;
+   font-family: Lucida Console, Courier, monospace;
+   color: blue;
+   text-align: center;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.memoria{
+
+  margin: 30px auto;
+
+  border-radius: 10px;
+  position: relative;
+  background: skyblue;
+}
+
+.memoria:after  {
+  content: "";
   display: block;
-  opacity: 0;
-  transition: opacity 2s;
-  color: white;
+  clear: both;
 }
-.app.app-ready {
-  opacity: 1;
-}
-.app__hud {
-  background: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 1em;
-}
-.app__hud__game-info, .app__hud__game-completed {
-  display: inline-block;
-  margin-right: 1em;
-}
-.app__hud__game-status {
-  display: inline-block;
-  font-size: 70%;
-  margin-right: 1em;
-}
-.app__hud__btn-restart {
-  font-size: 70%;
-}
-.app__cards-container {
-  margin: 5px auto 0;
-  max-width: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-@media (min-width: 600px) {
-  .app__cards-container {
-    max-width: 600px;
-  }
-}
-.app__cards-container__card {
-  display: inline-block;
-  margin: 5px;
-  overflow: hidden;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: 60px;
-  height: 60px;
-}
-@media (min-width: 600px) {
-  .app__cards-container__card {
-    width: 120px;
-    height: 120px;
-  }
-}
-.app__cards-container__card.ng-leave {
-  opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
-  transition: 2s ease-in-out;
-}
-.app__cards-container__card.ng-leave.ng-leave-active {
-  opacity: 0;
-  width: 0;
-  margin: 0;
-  -webkit-transform: scale3d(0, 0, 0);
-          transform: scale3d(0, 0, 0);
-}
-.app__cards-container__card.ng-enter {
-  transition: 1s ease-in-out;
-  opacity: 0;
-}
-.app__cards-container__card.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.app__cards-container__card:nth-child(1) .front {
-  -webkit-animation-delay: 0.6666666667s;
-          animation-delay: 0.6666666667s;
-}
-.app__cards-container__card:nth-child(2) .front {
-  -webkit-animation-delay: 1.3333333333s;
-          animation-delay: 1.3333333333s;
-}
-.app__cards-container__card:nth-child(3) .front {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.app__cards-container__card:nth-child(4) .front {
-  -webkit-animation-delay: 2.6666666667s;
-          animation-delay: 2.6666666667s;
-}
-.app__cards-container__card:nth-child(5) .front {
-  -webkit-animation-delay: 3.3333333333s;
-          animation-delay: 3.3333333333s;
-}
-.app__cards-container__card:nth-child(6) .front {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.app__cards-container__card:nth-child(7) .front {
-  -webkit-animation-delay: 4.6666666667s;
-          animation-delay: 4.6666666667s;
-}
-.app__cards-container__card:nth-child(8) .front {
-  -webkit-animation-delay: 5.3333333333s;
-          animation-delay: 5.3333333333s;
-}
-.app__cards-container__card:nth-child(9) .front {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-.app__cards-container__card:nth-child(10) .front {
-  -webkit-animation-delay: 6.6666666667s;
-          animation-delay: 6.6666666667s;
-}
-.app__cards-container__card:nth-child(11) .front {
-  -webkit-animation-delay: 7.3333333333s;
-          animation-delay: 7.3333333333s;
-}
-.app__cards-container__card:nth-child(12) .front {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.app__cards-container__card:nth-child(13) .front {
-  -webkit-animation-delay: 8.6666666667s;
-          animation-delay: 8.6666666667s;
-}
-.app__cards-container__card:nth-child(14) .front {
-  -webkit-animation-delay: 9.3333333333s;
-          animation-delay: 9.3333333333s;
-}
-.app__cards-container__card:nth-child(15) .front {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.app__cards-container__card:nth-child(16) .front {
-  -webkit-animation-delay: 10.6666666667s;
-          animation-delay: 10.6666666667s;
-}
-.app__cards-container__card__front {
-  text-align: center;
-  line-height: 60px;
-  background: rgba(255, 255, 255, 0.1);
+ 
+.carta {
+  width: 18%;
+  margin: 1% 1%;
+  height: 150px;
+  border-radius: 8px;
+  float: left;
   cursor: pointer;
-  -webkit-animation: front-cover 2s ease-in-out alternate infinite;
-          animation: front-cover 2s ease-in-out alternate infinite;
+  
+  
 }
-@media (min-width: 600px) {
-  .app__cards-container__card__front {
-    line-height: 120px;
-  }
+
+.inner-wrap {
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s;.
+  -webkit-transition: all 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
-.app__cards-container__card__front:hover {
-  background: rgba(255, 255, 255, 0.3);
+
+
+.frente {
+  background: black top center;
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+  z-index: 2;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transition: background 0.5s;
 }
-.app__cards-container__card__back {
+
+.flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+
+}
+
+.frente, .atras {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.atras {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   text-align: center;
-  line-height: 60px;
-  font-size: 40px;
-}
-@media (min-width: 600px) {
-  .app__cards-container__card__back {
-    line-height: 120px;
-  }
-}
-@media (min-width: 600px) {
-  .app__cards-container__card__back {
-    font-size: 60px;
-  }
-}
-.app__cards-container__card__back > span {
-  display: block;
-  -webkit-animation: back-cover 2s ease-in-out alternate infinite;
-          animation: back-cover 2s ease-in-out alternate infinite;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.30);
+  
 }
 
-@-webkit-keyframes back-cover {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
+.contador p {
+    font-size: 20px;
+    font-family: Lucida Console, Courier, monospace;
+    color: blue;
 }
 
-@keyframes back-cover {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
+.contador {
+    position: relative;
+    right: -85px;
+    top: 30px;
 }
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.ng-enter-stagger {
-  transition-delay: 0.1s;
-  transition-duration: 0s;
+p.counter {
+    text-align: center;
+    font-family: Lucida Console, Courier, monospace;
 }
 
-.ng-leave-stagger {
-  transition-delay: 0.1s;
-  transition-duration: 0s;
+
+.todo > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.frente:hover {
+  background: #E8A868;
+  cursor: pointer;
 }
