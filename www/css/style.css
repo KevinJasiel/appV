@@ -174,10 +174,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background: #FF9090;
-}
-
 .todo {
   max-width: 900px;
   width: 100%;
@@ -205,7 +201,6 @@ img {
 
   border-radius: 10px;
   position: relative;
-  background: skyblue;
 }
 
 .memoria:after  {
@@ -215,9 +210,9 @@ img {
 }
  
 .carta {
-  width: 18%;
-  margin: 1% 1%;
-  height: 150px;
+  width: 20%;
+  margin: -5% 1%;
+  height: 120px;
   border-radius: 8px;
   float: left;
   cursor: pointer;
@@ -274,19 +269,19 @@ img {
   
 }
 
-.contador p {
-    font-size: 20px;
+.contador span {
+    font-size: 15px;
     font-family: Lucida Console, Courier, monospace;
     color: blue;
 }
 
 .contador {
     position: relative;
-    right: -85px;
-    top: 30px;
+    right: -75px;
+    top: 20px;
 }
 p.counter {
-    text-align: center;
+    text-align: relative;
     font-family: Lucida Console, Courier, monospace;
 }
 
