@@ -36,24 +36,24 @@ var fields = document.querySelectorAll(".atras");
 
 
 var images = [
-"https://s-media-cache-ak0.pinimg.com/originals/30/9b/58/309b58c5153182dc480d429d21bb1ec1.png",
-"https://s-media-cache-ak0.pinimg.com/originals/4b/ae/6c/4bae6cba8ec4060b5c4059ad2ce9c329.png",
-"https://s-media-cache-ak0.pinimg.com/originals/b6/df/d7/b6dfd79c625f9ebe14709a9b75224962.png",
-"https://s-media-cache-ak0.pinimg.com/originals/76/e7/a3/76e7a392abff7c8a22969f7c95f37d4c.png",
-"https://s-media-cache-ak0.pinimg.com/originals/cb/ca/50/cbca50fc5156fb15b68bd3ab5dae6e06.png",
-"https://s-media-cache-ak0.pinimg.com/originals/de/b9/70/deb9709e87f1d5b7f6457e8286113012.png",
-"https://s-media-cache-ak0.pinimg.com/originals/29/9e/c7/299ec7c3cd62b88dd4905ffc6a71d8f9.png",
-"https://s-media-cache-ak0.pinimg.com/originals/74/11/00/74110094c67aa9a519c70ecb7cec7d76.png",
-"http://diysolarpanelsv.com/images/neville-clipart-4.png",
-"https://s-media-cache-ak0.pinimg.com/originals/30/9b/58/309b58c5153182dc480d429d21bb1ec1.png",
-"https://s-media-cache-ak0.pinimg.com/originals/4b/ae/6c/4bae6cba8ec4060b5c4059ad2ce9c329.png",
-"https://s-media-cache-ak0.pinimg.com/originals/b6/df/d7/b6dfd79c625f9ebe14709a9b75224962.png",
-"https://s-media-cache-ak0.pinimg.com/originals/76/e7/a3/76e7a392abff7c8a22969f7c95f37d4c.png",
-"https://s-media-cache-ak0.pinimg.com/originals/cb/ca/50/cbca50fc5156fb15b68bd3ab5dae6e06.png",
-"https://s-media-cache-ak0.pinimg.com/originals/de/b9/70/deb9709e87f1d5b7f6457e8286113012.png",
-"https://s-media-cache-ak0.pinimg.com/originals/29/9e/c7/299ec7c3cd62b88dd4905ffc6a71d8f9.png",
-"https://s-media-cache-ak0.pinimg.com/originals/74/11/00/74110094c67aa9a519c70ecb7cec7d76.png",
-"http://diysolarpanelsv.com/images/neville-clipart-4.png"
+"http://download.seaicons.com/icons/bingxueling/fruit-vegetables/256/apple-green-icon.png",
+"https://image.flaticon.com/icons/png/512/415/415767.png",
+"https://images.emojiterra.com/twitter/512px/1f349.png",
+"https://cdn.icon-icons.com/icons2/1465/PNG/512/529peach_100978.png",
+"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c15d.png",
+"https://img.icons8.com/cotton/420/grape.png",
+"https://images.vexels.com/media/users/3/143191/isolated/preview/925871db899c05172adae868b7ca93c0-icono-de-color-naranja-by-vexels.png",
+"https://images.vexels.com/media/users/3/143081/isolated/preview/3774968d85982132a3c5acb552bd8efd-icono-plano-de-color-zanahoria-by-vexels.png",
+"https://images.vexels.com/media/users/3/143256/isolated/preview/bd004f1e4b78304f8861697bb7fda526-icono-plano-de-color-de-nabo-by-vexels.png",
+"https://images.vexels.com/media/users/3/143051/isolated/preview/7c640e541176de78cabefc799ad3efac-apple-color-stroke-icon-by-vexels.png",
+"https://img2.freepng.es/20181110/fz/kisspng-romaine-lettuce-iceberg-lettuce-vegetable-salad-ri-5be77eb5caa654.1970901215418979098301.jpg",
+"https://cdn.pixabay.com/photo/2017/01/31/21/56/food-2027563_960_720.png",
+"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1ff.png",
+"https://png.pngtree.com/element_our/md/20180428/md_5ae40bb0675f8.png",
+"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png",
+"https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/05092405/Clipart-banana-png-image-1024x660.png",
+"https://images.vexels.com/media/users/3/141761/isolated/preview/d98a8114018473a6b0aeb849da9d6953-planta-de-alimento-de-trigo-by-vexels.png",
+"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c19b.png"
 ];
 // verificacion de los clicks
 function clicked() { 
