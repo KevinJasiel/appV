@@ -37,22 +37,22 @@ var fields = document.querySelectorAll(".atras");
 
 var images = [
 "http://download.seaicons.com/icons/bingxueling/fruit-vegetables/256/apple-green-icon.png",
+"http://download.seaicons.com/icons/bingxueling/fruit-vegetables/256/apple-green-icon.png",
 "https://image.flaticon.com/icons/png/512/415/415767.png",
-"https://images.emojiterra.com/twitter/512px/1f349.png",
-"https://cdn.icon-icons.com/icons2/1465/PNG/512/529peach_100978.png",
-"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c15d.png",
+"https://image.flaticon.com/icons/png/512/415/415767.png",
 "https://img.icons8.com/cotton/420/grape.png",
-"https://images.vexels.com/media/users/3/143191/isolated/preview/925871db899c05172adae868b7ca93c0-icono-de-color-naranja-by-vexels.png",
+"https://img.icons8.com/cotton/420/grape.png",
 "https://images.vexels.com/media/users/3/143081/isolated/preview/3774968d85982132a3c5acb552bd8efd-icono-plano-de-color-zanahoria-by-vexels.png",
-"https://images.vexels.com/media/users/3/143256/isolated/preview/bd004f1e4b78304f8861697bb7fda526-icono-plano-de-color-de-nabo-by-vexels.png",
+"https://images.vexels.com/media/users/3/143081/isolated/preview/3774968d85982132a3c5acb552bd8efd-icono-plano-de-color-zanahoria-by-vexels.png",
 "https://images.vexels.com/media/users/3/143051/isolated/preview/7c640e541176de78cabefc799ad3efac-apple-color-stroke-icon-by-vexels.png",
-"https://img2.freepng.es/20181110/fz/kisspng-romaine-lettuce-iceberg-lettuce-vegetable-salad-ri-5be77eb5caa654.1970901215418979098301.jpg",
+"https://images.vexels.com/media/users/3/143051/isolated/preview/7c640e541176de78cabefc799ad3efac-apple-color-stroke-icon-by-vexels.png",
 "https://cdn.pixabay.com/photo/2017/01/31/21/56/food-2027563_960_720.png",
-"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1ff.png",
+"https://cdn.pixabay.com/photo/2017/01/31/21/56/food-2027563_960_720.png",
 "https://png.pngtree.com/element_our/md/20180428/md_5ae40bb0675f8.png",
-"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png",
+"https://png.pngtree.com/element_our/md/20180428/md_5ae40bb0675f8.png",
 "https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/05092405/Clipart-banana-png-image-1024x660.png",
-"https://images.vexels.com/media/users/3/141761/isolated/preview/d98a8114018473a6b0aeb849da9d6953-planta-de-alimento-de-trigo-by-vexels.png",
+"https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/05092405/Clipart-banana-png-image-1024x660.png",
+"http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c19b.png",
 "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c19b.png"
 ];
 // verificacion de los clicks
